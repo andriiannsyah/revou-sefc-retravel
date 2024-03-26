@@ -1,6 +1,6 @@
 :root {
-  --primary-color: #5356ff;
-  --secondary-color: #378ce7;
+  --primary-color: #1976d2;
+  --secondary-color: #2196f3;
   --primary-font: Poppins;
   --font-bold: 700;
   --font-semibold: 600;
@@ -11,6 +11,9 @@
   padding: 0;
   font-style: var(--primary-font);
   text-decoration: none;
+}
+body {
+  font-family: var(--primary-font);
 }
 .header {
   display: flex;
@@ -26,7 +29,6 @@
 }
 .header__logo a {
   font-weight: var(--font-semibold);
-  font-family: var(--primary-font);
   color: #fff;
   font-size: 20px;
   line-height: 40px;
@@ -42,7 +44,6 @@
 .header__menu li a {
   text-decoration: none;
   color: #fff;
-  font-family: var(--primary-font);
   font-size: 14px;
 }
 
@@ -62,7 +63,6 @@
 }
 .jumbotron__box h1,
 .jumbotron__box p {
-  font-family: var(--primary-font);
   font-weight: var(--font-semibold);
   text-align: center;
   color: #2f2f31;
@@ -81,7 +81,6 @@
 }
 .btn-jumbotron a {
   color: #fff;
-  font-family: var(--primary-font);
   font-weight: var(--font-semibold);
 }
 .main {
@@ -92,15 +91,105 @@
 }
 .container__main {
   display: flex;
-  column-gap: 20px;
+  column-gap: 80px;
 }
 .main__content {
-  width: 680px;
+  width: 600px;
   height: 100%;
-  background-color: salmon;
+}
+
+.main__img {
+  width: 100%;
+  height: 400px;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  margin-bottom: 60px;
+  overflow: hidden;
+}
+q.main__motto {
+  background-color: #f7f7f7;
+  padding: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #686868;
+  border-left: 3px solid var(--secondary-color);
+  letter-spacing: 1px;
+  border-radius: 5px;
+}
+.main__ulasan-user {
+  margin-top: 60px;
+  display: flex;
+  gap: 30px;
+}
+.main__ulasan-avatar {
+  width: 60px;
+  height: 60px;
+  background-color: #f7f7f7;
+  border-radius: 100%;
+}
+.main__ulasan-nama h3 {
+  font-weight: 500;
+}
+.main__ulasan-nama p,
+.main__ulasan-nama span {
+  font-weight: 300;
+  font-size: 14px;
+  color: #979799;
+}
+
+.main__form-wrap {
+  width: 400px;
+  height: 540px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 40px 40px;
+}
+.main__form-title h1 {
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+.main__form-title p {
+  font-size: 14px;
+  font-weight: 200;
+  margin-bottom: 80px;
 }
 .main__form {
-  width: 400px;
-  height: 100%;
-  background-color: palegreen;
+  display: flex;
+  flex-direction: column;
+}
+.main__form label {
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+.main__form input,
+.main__form select {
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 2px solid #dbdbdb;
+  outline: none;
+  border-radius: 4px;
+}
+.btn {
+  width: 100%;
+  padding: 14px;
+  background-color: #2196f3;
+  border: none;
+  color: white;
+  font-weight: 600;
+  border-radius: 4px;
+  margin-top: 20px;
+}
+
+/* main-fitur */
+.main__fitur-kalimat {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+.main__fitur ol li {
+  margin-left: 40px;
+  line-height: 40px;
+  padding-left: 40px;
 }
