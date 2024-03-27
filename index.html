@@ -47,7 +47,7 @@
         <section class="main__content">
           <div class="main__ulasan">
             <div class="main__img">
-              <img src="https://source.unsplash.com/random/600x400" alt="" />
+              <!-- <img src="https://source.unsplash.com/random/600x400" alt="" /> -->
             </div>
             <q class="main__motto">Liburan Kemanapun Dimanapun dan Kapanpun</q>
             <div class="main__ulasan-user">
@@ -74,11 +74,11 @@
             <h1>Contact Us</h1>
             <p>Sales akan menghubungi anda dalam 1 x 24 Jam setelah data kami terima</p>
           </div>
-          <form action="" class="main__form">
+          <form action="" class="main__form" name="form-contact">
             <label for="name">Your Name :</label>
-            <input type="text" name="name" id="name" placeholder="First and Last Name" />
-            <label for="name">Email Address :</label>
-            <input type="text" name="name" id="name" placeholder="Example@email.com" />
+            <input type="text" name="name" id="name" placeholder="First and Last Name" autocomplete="on" />
+            <label for="email">Email Address :</label>
+            <input type="text" name="email" id="email" placeholder="Example@email.com" autocomplete="on" />
             <label for="destinasi">What are you Interested in :</label>
             <select name="destinasi" id="destinasi">
               <option disabled value="">Select Option</option>
@@ -87,10 +87,63 @@
               <option value="raja ampat">Raja Ampat</option>
               <option value="Lombok">Lombok</option>
             </select>
-            <button class="btn">SEND</button>
+            <button class="btn" id="send-button" type="button">SEND</button>
           </form>
         </section>
       </div>
     </div>
+    <div class="our-package__title">
+      <h1>Our Package</h1>
+    </div>
+    <div class="our-package">
+      <div class="container__package">
+        <div class="our-package__content">
+          <div class="our-package__box">
+            <div class="package-box__icon"></div>
+            <div class="package-box__destinasi">
+              <h3>Bali</h3>
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+          </div>
+          <div class="our-package__box">
+            <div class="package-box__icon"></div>
+            <div class="package-box__destinasi">
+              <h3>Bali</h3>
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+          </div>
+          <div class="our-package__box">
+            <div class="package-box__icon"></div>
+            <div class="package-box__destinasi">
+              <h3>Bali</h3>
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+          </div>
+          <div class="our-package__box">
+            <div class="package-box__icon"></div>
+            <div class="package-box__destinasi">
+              <h3>Bali</h3>
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+          </div>
+          <div class="our-package__box">
+            <div class="package-box__icon"></div>
+            <div class="package-box__destinasi">
+              <h3>Bali</h3>
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+          </div>
+          <div class="our-package__box">
+            <div class="package-box__icon"></div>
+            <div class="package-box__destinasi">
+              <h3>Bali</h3>
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/script.js"></script>
   </body>
 </html>
