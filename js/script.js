@@ -12,3 +12,11 @@ function formSubmit() {
   }
 }
 document.getElementById("send-button").addEventListener("click", () => formSubmit());
+
+// HAMBURGER MENU
+const hamburger = document.querySelector(".hamburger-menu");
+const menu = document.querySelector(".header__menu");
+
+hamburger.addEventListener("click", () => {
+  menu.classList.toggle("hidden");
+});
